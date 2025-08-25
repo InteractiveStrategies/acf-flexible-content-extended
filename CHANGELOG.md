@@ -1,5 +1,20 @@
 # Changelog ##
 
+## 2.0.1 - 25 Aug 2025
+
+#### Compatibility
+* Updated plugin JS and selectors for ACF Pro 6.5 modal markup changes (`acf-fc-layout-controls` replaced with `acf-fc-layout-actions-wrap`)
+* Improved modal overlay logic to match new ACF modal structure
+* Updated modal open/close logic and class handling for new ACF layout markup
+* Fixed JS selector and event issues for flexible content modal actions
+* Improved error handling for missing taxonomy term keys and null values
+* Updated admin JS to ensure modal overlay is injected and toggled correctly
+
+#### Improvements
+* Ensured order number and title display correctly in modal header
+* Added support for toggling collapsed state across all layouts
+* Cleaned up SCSS mixin and icon usage for admin
+
 ## 2.0.0 - 24 Aug 2022
 
 #### Breaking Changes

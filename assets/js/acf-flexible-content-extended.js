@@ -25,7 +25,7 @@
       // Automatically open the new layout after append it, to improve usability
       acf.addAction('append', function($el) {
         if ($el.is('.layout'))
-          $el.find('> .acf-fc-layout-controls a.-pencil').trigger('click');
+          $el.find('.acf-fc-layout-controls a.-pencil').trigger('click');
       });
 
       // Point error messages inside FC
@@ -81,8 +81,8 @@
       $layout.removeClass('-collapsed');
 
       // Remove collapse button and click event
-      $layout.find('> .acf-fc-layout-handle').off('click');
-      $layout.find('> .acf-fc-layout-controls > a.-collapse').remove();
+      $layout.find('.acf-fc-layout-handle').off('click');
+      $layout.find('.acf-fc-layout-controls a.-collapse').remove();
 
       // Open modal when the collapsed layout is clicked
       $layout.find('> .acf-fc-layout-handle').on('dblclick', ACFFCE.open);
@@ -91,10 +91,9 @@
       const edit = $('<a class="acf-icon -pencil small light" href="#" data-event="edit-layout" title="Edit layout" />');
 
       // Not a duplicated layout
-      if (!$layout.find('> .acf-fc-layout-controls a[data-event="edit-layout"]').length) {
-
+      if (!$layout.find('.acf-fc-layout-controls a[data-event="edit-layout"]').length) {
         // Add edit button
-        $layout.find('> .acf-fc-layout-controls').append(edit);
+        $layout.find('.acf-fc-layout-controls').append(edit);
 
         // Add modal elements
         $layout.prepend('<div class="acf-fc-modal-title" />');
@@ -103,9 +102,9 @@
         // Duplicated layout
       } else {
         // Remove old edit button copied from existing layout
-        $layout.find('> .acf-fc-layout-controls a[data-event="edit-layout"]').remove();
+        $layout.find('.acf-fc-layout-controls a[data-event="edit-layout"]').remove();
         // Add new edit button for current layout
-        $layout.find('> .acf-fc-layout-controls').append(edit);
+        $layout.find('.acf-fc-layout-controls').append(edit);
       }
 
       // Bind click event to edit button to open modal
@@ -116,10 +115,11 @@
     open() {
 
       const $layout = $(this).parents('.layout:first');
-      const caption = $layout.find('> .acf-fc-layout-handle').html();
+      const number = $layout.find('.acf-fc-layout-order').html();
+      const caption = $layout.find('.acf-fc-layout-title').html();
       const a = $('<a class="dashicons dashicons-no -cancel" />').on('click', ACFFCE.close);
 
-      $layout.find('> .acf-fc-modal-title').html(caption).append(a);
+      $layout.find('.acf-fc-modal-title').html('<span class="acf-fc-layout-order">' + number + '</span> <span class="acf-fc-layout-title">' + caption + '</span>').append(a);
       $layout.addClass('-modal');
 
       ACFFCE.modals.push($layout);
@@ -138,7 +138,7 @@
       field.closeLayout(field.$layout($layout.index()));
 
       // Close
-      $layout.find('> .acf-fc-modal-title').html(' ');
+      $layout.find('.acf-fc-modal-title').html(' ');
       $layout.removeClass('-modal').css('visibility', '');
       $layout.addClass('-highlight-closed');
 
