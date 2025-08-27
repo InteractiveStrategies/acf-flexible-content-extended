@@ -44,7 +44,7 @@ add_filter( 'acf-flexible-content-extended.images', $images );
 
 ## Requirements
 
-- [ACF Pro >= 5.7.0](https://www.advancedcustomfields.com/)
+- [ACF Pro >= 6.5.0](https://www.advancedcustomfields.com/)
 - WordPress 4.7+ because of [get_theme_file_uri()](https://developer.wordpress.org/reference/functions/get_theme_file_uri)
 - Browser Support:
   - Last 2 Firefox major versions
