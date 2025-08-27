@@ -2,6 +2,10 @@
 
   .layout {
 
+    .acf-fc-layout-actions-wrap {
+      border-bottom: 0px solid transparent;
+    }
+
     &.-highlight-closed {
       animation: highlightClosed .65s .1s ease-out;
     }
@@ -32,17 +36,25 @@
       }
 
       & > .acf-fc-modal-title {
-        display: block;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
       }
 
       & > .acf-fc-modal-content {
         display: block;
-        max-height: calc(100vh - 138px);
+        max-height: calc(100vh - 150px);
         overflow: auto;
       }
 
-      & > .acf-fc-layout-controls,
-      & > .acf-fc-layout-handle {
+      & .acf-fc-layout-controls [data-name="duplicate-layout"],
+      & .acf-fc-layout-controls [data-name="add-layout"],
+      & .acf-fc-layout-controls [data-name="more-layout-actions"],
+      & .acf-fc-layout-controls [data-name="collapse-layout"],
+      & .acf-fc-layout-controls [data-event="delete-layout"],
+      & .acf-fc-layout-controls [data-event="edit-layout"],
+      .acf-fc-layout-actions-wrap {
+      // & .acf-fc-layout-handle {
         display: none;
       }
     }
@@ -51,9 +63,13 @@
       display: none;
       position: relative;
       box-sizing: border-box;
-      height: 37px;
-      background: #eee;
-      line-height: 37px;
+      right: 0;
+      height: 45px;
+      // height: 0;
+      color: #fff;
+      font-weight: 500;
+      background: #2271b1;
+      line-height: 45px;
       padding: 0 40px 0 10px;
       border-bottom: 1px solid #dfdfdf;
       overflow: hidden;
@@ -66,11 +82,12 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 37px;
-        height: 37px;
-        color: #666;
-        line-height: 37px;
+        width: 45px;
+        height: 45px;
+        color: #fff;
+        line-height: 45px;
         text-align: center;
+        z-index: 10002;
 
         &:hover,
         &:focus {
@@ -79,7 +96,14 @@
       }
 
       & > .acf-fc-layout-order {
-        background: #ddd;
+        display: flex;
+        justify-content: center;
+        width: 32px;
+        height: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        box-sizing: border-box;
+        line-height: 18px;
       }
     }
 
@@ -161,6 +185,37 @@
   z-index: 10002 !important;
 }
 
+.acf-btn.acf-btn-clear {
+  display: none;
+}
+
+.acf-fc-popup {
+  li {
+    height: 100%;
+  }
+}
+
+.acf-flexible-content>.acf-actions.acf-fc-top-actions .acf-separator {
+  display: none;
+}
+
+.acf-fc-popup.acf-more-layout-actions {
+  ul {
+    width: 212px;
+    height: auto;
+    grid-template-columns: 1fr;
+
+    li {
+      height: auto;
+
+      a {
+        box-shadow: none !important;
+        padding: 10px !important;
+      }
+    }
+  }
+}
+
 .acf-fields.-top > .acf-field-flexible-content > .acf-input > .acf-flexible-content > .values > .layout {
 
   & > .acf-fc-layout-handle {
@@ -188,7 +243,8 @@ body.acf-modal-open {
 }
 
 .acf-icon.-pencil::before {
-  font-size: 12px;
+  font-size: 20px;
+  padding: 5px;
 }
 
 @keyframes fcModalSlide {

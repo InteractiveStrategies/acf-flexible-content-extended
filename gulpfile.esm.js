@@ -7,7 +7,6 @@ import del from 'del';
 import eslint from 'gulp-eslint';
 
 const sass = require('gulp-sass')(require('sass'));
-import Fiber from 'fibers';
 
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
@@ -16,7 +15,6 @@ gulp.task('clean', () => del(['assets/css/acf-flexible-content-extended.css', 'a
 
 gulp.task('sass', () => gulp.src('assets/src/acf-flexible-content-extended.scss')
   .pipe(sass({
-    fiber: Fiber,
     outputStyle: 'expanded',
     errLogToConsole: true
   }))
