@@ -2,10 +2,10 @@
 Contributors: jameelmoses, klabson
 Tags: acf, advanced, custom, field, fields, addon, flexible, content, preview, modal
 Donate link: https://www.paypal.com/paypalme/jameelmoses
-Requires at least: 6.0
-Tested up to: 6.0.1
+Requires at least: 6.5
+Tested up to: 6.5.0.1
 Requires PHP: 8.0
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv3 or later
 License URI: https://github.com/jameelmoses/acf-flexible-content-extended/blob/master/LICENSE.md
 
@@ -38,13 +38,13 @@ Additionally, you could filter all keys and/or images:
 If you identify any errors or have an idea for improving the plugin, feel free to open an [issue](https://github.com/jameelmoses/acf-flexible-content-extended/issues) or [create a pull request](https://github.com/jameelmoses/acf-flexible-content-extended/pulls). Please provide as much info as needed in order to help resolving or approve your request.
 
 == Installation ==
-This plugin works only if the [ACF Pro >= 5.7.O](https://www.advancedcustomfields.com/) plugin is installed and activated.
+This plugin works only if the [ACF Pro >= 6.5.0](https://www.advancedcustomfields.com/) plugin is installed and activated.
 
 = Requirements =
 
-- [ACF Pro >= 5.7.O](https://www.advancedcustomfields.com/)
-- WordPress 6.0
-- Tested up to WP 6.0.1
+- [ACF Pro >= 6.5.0](https://www.advancedcustomfields.com/)
+- WordPress 6.8
+- Tested up to WP 6.5.0.1
 - Browser Support:
   - Last 2 Firefox major versions
   - Last 2 Safari major versions
@@ -65,6 +65,10 @@ This plugin works only if the [ACF Pro >= 5.7.O](https://www.advancedcustomfield
 3. Screenshot of Flexible Content Field Layout Edit Modal
 
 == Changelog ==
+= 2.0.1 =
+* Requires ACF Pro >= 6.5
+* Solve issues with flexible content fields from latest ACF Pro 6.5 release
+
 = 2.0.0 =
 * Requires PHP >= 8.0
 * Requires WordPress >= 6.0
