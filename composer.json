@@ -1,6 +1,6 @@
 {
-  "name": "jameelmoses/acf-flexible-content-extended",
-  "version": "2.0.0",
+  "name": "interactivestrategies/acf-flexible-content-extended",
+  "version": "2.0.1",
   "description": "Extends the ACF Flexible Content Field by transforming the layout list into a modal with image previews. Editing the fields layouts also happens in a modal for a better editing user experience.",
   "keywords": [
     "WP",
@@ -10,11 +10,15 @@
     "Flexible Content Field Preview",
     "Flexible Content Field Modal"
   ],
-  "homepage": "https://github.com/jameelmoses/acf-flexible-content-extended",
+  "homepage": "https://github.com/interactivestrategies/acf-flexible-content-extended",
   "authors": [{
     "name": "Jameel Moses",
     "email": "jameelmoses@gmail.com",
     "homepage": "https://github.com/jameelmoses"
+  }, {
+    "name": "Melissa Sattler",
+    "email": "melissa@interactivestrategies.com",
+    "homepage": "https://interactivestrategies.com"
   }],
   "type": "wordpress-plugin",
   "minimum-stability": "stable",
