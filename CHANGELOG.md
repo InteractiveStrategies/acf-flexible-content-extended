@@ -1,5 +1,10 @@
 # Changelog ##
 
+## 2.0.1.1 - 5 Sept 2025
+
+#### Improvements
+* Improved styling for the Add Components button popup.
+
 ## 2.0.1 - 25 Aug 2025
 
 #### Compatibility

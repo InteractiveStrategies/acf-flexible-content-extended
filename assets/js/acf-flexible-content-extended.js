@@ -68,6 +68,7 @@
 
       // Add markup to links for easier styling
       $('body').on('click', 'a[data-name="add-layout"]', function() {
+        $('.acf-fc-popup').addClass('acf-fc-pop-up-active');
         $('.acf-fc-popup a').each(function() {
           const html = '<div class="acf-fc-popup-label">' + $(this).html() + '</div><div class="acf-fc-popup-image"></div>';
           $(this).html(html);
