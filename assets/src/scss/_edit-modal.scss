@@ -10,7 +10,7 @@
       animation: highlightClosed .65s .1s ease-out;
     }
 
-    &.layout-error-messages > .acf-fc-layout-handle .acf-fc-layout-order {
+    &.layout-error-messages .acf-fc-layout-handle .acf-fc-layout-order {
       background: #F55E4F;
       color: #fff;
     }
