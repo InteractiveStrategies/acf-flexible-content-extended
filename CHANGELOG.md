@@ -1,5 +1,10 @@
 # Changelog ##
 
+## 2.0.1.2 - 11 Sept 2025
+
+#### Improvements
+* Fixed validation errors shoing up on the order number.
+
 ## 2.0.1.1 - 5 Sept 2025
 
 #### Improvements

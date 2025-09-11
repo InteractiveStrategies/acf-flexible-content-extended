@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Plugin constants
-define( 'ACF_FCE_VERSION', '2.0.1.1' );
+define( 'ACF_FCE_VERSION', '2.0.1.2' );
 define( 'ACF_FCE_MIN_PHP_VERSION', '8.0' );
 
 // Plugin URL and PATH

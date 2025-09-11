@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/paypalme/jameelmoses
 Requires at least: 6.5
 Tested up to: 6.5.0.1
 Requires PHP: 8.0
-Stable tag: 2.0.1.1
+Stable tag: 2.0.1.2
 License: GPLv3 or later
 License URI: https://github.com/jameelmoses/acf-flexible-content-extended/blob/master/LICENSE.md
 
@@ -65,6 +65,9 @@ This plugin works only if the [ACF Pro >= 6.5.0](https://www.advancedcustomfield
 3. Screenshot of Flexible Content Field Layout Edit Modal
 
 == Changelog ==
+= 2.0.1.2 =
+* Solve styling issue for validation errors on order numbers.
+
 = 2.0.1.1 =
 * Solve styling issue with Add Components popup.
 
